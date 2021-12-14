@@ -1,0 +1,198 @@
+/* Working with FLEXBOX */
+body, nav, ul, main, header, article, section, form, section, #container, footer, h1, h2, h3, h4{
+  display: flex;
+  width: 100%;
+}
+
+
+
+body { 
+  font-family: sans-serif; /* Poppines */
+  background-color: White;
+  flex-direction: column;
+}
+
+/* ---------------------- Nav --------------------- */
+
+nav {
+  height: 7vh;
+  width: 80%;
+  color: white;
+  justify-content: space-around;
+}
+
+ul {
+  width: 70%;
+  flex-direction: row;
+  align-items: center;
+}
+
+#left {
+
+}
+
+#right {
+  width: 10%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+li {
+  display: block;
+  text-decoration: none;
+}
+
+
+/* ---------------------- Header --------------------- */
+
+h1 {
+  font-size: 10em;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1.8em;
+  justify-content: center;
+}
+
+header {
+  background-image: url("../uploads/bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > article {
+  height: 30vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header > article section {
+  width: 30%;
+  justify-content: space-evenly;
+}
+
+
+/* ---------------------- Main --------------------- */
+
+main {flex-direction: column;}
+
+#info {
+  height: 25vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5% 0;
+}
+
+#info > article {
+  height: 15vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#info p {text-align: center;}
+
+#benefits {
+  flex-direction: column;
+  height: 70vh;
+  color: white;
+  background-color: green;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+
+#benefits h2 {justify-content: center;}
+
+#benefits > section{
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#benefits section > article{
+  width: 20%;
+  height: 35vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+main section {
+  flex-direction: column;
+}
+
+main section form {
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+footer {justify-content: center;}
+
+/* -------------------- Arrow Animation -------------------- */
+.arrow{height: 15vh;}
+
+.arrow span{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 5px solid #f7fafc;
+  border-right: 5px solid #f7fafc;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+
+/* -------------------- API containers -------------------- */
+
+#container {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#container section {
+  flex-direction: column;
+  width: 33%;
+}
+
+
+.article_content_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}

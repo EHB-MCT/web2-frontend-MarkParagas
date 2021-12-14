@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<!-- API -->
+
+<head>
+    <title>Genki Tea</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+    <script type="module" src="./js/frontend.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- ------------------- Nav ------------------- -->
+        <nav>
+            <ul id="left">
+                <li>Genki Tea</li>
+            </ul>
+            <ul id="right">
+                <li>Tea</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <!-- ------------------- Header ------------------- -->
+        <article>
+            <h1>Genki Tea</h1>
+            <section>
+                <button>
+                    benefits
+                </button>
+                <button>
+                    search
+                </button>
+            </section>
+        </article>
+        <!-- ------------------- Arrow Ani ------------------- -->
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- ------------------- Main ------------------- -->
+    <main>
+        <!-- ------------------- [Info] ------------------- -->
+        <article id="info">
+            <h2>Genki Tea - Healthy tea, help you improve your health!</h2>
+            <article>
+                <p>
+                    Whether you are curious about tea health benefits, or you simply want to relax and enjoy a delicious cup of high-quality tea.
+                    <br>It brings you a truly authentic warm tea experience.
+                </p>
+                <p>
+                    Discover more about tea health benefits and on how to prepare them.
+                </p>
+            </article>
+            <button>
+                benefits
+            </button>
+        </article>
+
+        <!-- ------------------- [Button pressed | Getdata from api] ------------------- -->
+        <article id="benefits">
+            <h2>Tea has many benefits</h2>
+
+            <section>
+                <article>
+                    <p>* [Improve Health]</p>
+                    <p>* [Help you relax]</p>
+                    <p>* [Boost you immune system]</p>
+                    <p>* [Reduce pain and soreness]</p>
+                    <p>* [Prevent chronic diseases]</p>
+                    <p>* [Improve your digestive system]</p>
+                    <p>* [Calorie-Free]</p>
+                    <p>* [Lose weight]</p>
+                    <p>* [Quick to make]</p>
+                </article>
+                <article>
+                    <p>* [Improve heart health]</p>
+                    <p>* [Help Brain function]</p>
+                    <p>* [Lower blood pressure]</p>
+                    <p>* [Lower risk of cancer]</p>
+                    <p>* [Reduce bad breath]</p>
+                    <p>* [Prevent type 2 diabetes]</p>
+                    <p>* [Prevent cardiovascular disease]</p>
+                    <p>* [Burn fat]</p>
+                    <p>* [Help Anti-aging]</p>
+                </article>
+            </section>
+
+        </article>
+        <!-- API list with search engine -->
+        <section>
+            <form action="/action_page.php">
+                <input type="text" placeholder="Low blood pressure" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <div id="container">
+                <!-- ------------------- [API Selections] ------------------- -->
+
+            </div>
+
+        </section>
+    </main>
+    <!-- ------------------- Footer ------------------- -->
+    <footer>
+        <h4>
+            © Made with effort By Mark
+        </h4>
+    </footer>
+</body>
+
+</html>
