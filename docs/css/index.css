@@ -11,6 +11,24 @@ body, nav, ul, main, header, article, section, form, section, #container, footer
   width: 100%;
 }
 
+/* ---------------------  Scrollbar ---------------------  */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b3cd81;
+  border-radius: 10px;
+}
+
 /* ---------------------- General --------------------- */
 
 body { 
