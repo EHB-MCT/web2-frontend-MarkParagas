@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Genki Tea</title>
     <meta charset="utf-8">
@@ -8,23 +9,28 @@
     <link rel="stylesheet" type="text/css" href="./css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+
     <script src="main.js"></script>
     <script src="../src/index.js" type="module"></script>
 </head>
 
 <body>
+    <!-- ------------------- Nav ------------------- -->
+    <nav>
+        <ul id="left">
+            <li><a href="https://www.w3schools.com/">Genki Tea</a></li>
+        </ul>
+        <ul id="right">
+            <li><a href="https://www.w3schools.com/">Tea</a></li>
+            <li><a href="https://www.w3schools.com/">About</a></li>
+        </ul>
+    </nav>
     <header>
-        <!-- ------------------- Nav ------------------- -->
-        <nav>
-            <ul id="left">
-                <li>Genki Tea</li>
-            </ul>
-            <ul id="right">
-                <li>Tea</li>
-                <li>About</li>
-            </ul>
-        </nav>
         <!-- ------------------- Header ------------------- -->
         <article>
             <h1>Genki Tea</h1>
@@ -44,7 +50,6 @@
             <span></span>
         </div>
     </header>
-
     <!-- ------------------- Main ------------------- -->
     <main>
         <!-- ------------------- [Info] ------------------- -->
@@ -52,7 +57,8 @@
             <h2>Genki Tea - Healthy tea, help you improve your health!</h2>
             <article>
                 <p>
-                    Whether you are curious about tea health benefits, or you simply want to relax and enjoy a delicious cup of high-quality tea.
+                    Whether you are curious about tea health benefits, or you simply want to relax and enjoy a delicious
+                    cup of high-quality tea.
                     <br>It brings you a truly authentic warm tea experience.
                 </p>
                 <p>
@@ -102,7 +108,7 @@
             </form>
 
             <div id="container">
-                <!-- ------------------- [API Selections] ------------------- -->
+                <!-- ------------------- [API Selections Fetchen] ------------------- -->
 
             </div>
 
@@ -111,8 +117,15 @@
     <!-- ------------------- Footer ------------------- -->
     <footer>
         <h4>
-            © Made with effort By Mark
+            © Made with effort by Mark
         </h4>
     </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            let nav = document.querySelector("nav");
+            nav.classList.toggle("hover",window.scrollY > 0);
+        })
+    </script>
 </body>
+
 </html>
