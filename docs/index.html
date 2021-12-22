@@ -23,11 +23,11 @@
     <!-- ------------------- Nav ------------------- -->
     <nav>
         <ul id="left">
-            <li><a href="https://www.w3schools.com/">Genki Tea</a></li>
+            <li><a href="#">Genki Tea</a></li>
         </ul>
         <ul id="right">
-            <li><a href="https://www.w3schools.com/">Tea</a></li>
-            <li><a href="https://www.w3schools.com/">About</a></li>
+            <li><a href="#search">Tea</a></li>
+            <li><a href="#a_info">About</a></li>
         </ul>
     </nav>
     <header>
@@ -35,11 +35,11 @@
         <article>
             <h1>Genki Tea</h1>
             <section>
-                <button>
-                    benefits
+                <button onclick="myFunction_ikigai()">
+                    <a href="#benefits">benefits</a>
                 </button>
                 <button>
-                    search
+                    <a href="#search">search</a>
                 </button>
             </section>
         </article>
@@ -51,7 +51,7 @@
         </div>
     </header>
     <!-- ------------------- Main ------------------- -->
-    <main>
+    <main id="a_info">
         <!-- ------------------- [Info] ------------------- -->
         <article id="info">
             <h2>Genki Tea - Healthy tea, help you improve your health!</h2>
@@ -65,8 +65,8 @@
                     Discover more about tea health benefits and on how to prepare them.
                 </p>
             </article>
-            <button>
-                benefits
+            <button onclick="myFunction_ikigai()">
+                <a href="#benefits">benefits</a>
             </button>
         </article>
 
@@ -75,33 +75,34 @@
             <h2>Tea has many benefits</h2>
 
             <section>
+                <!-- ------------------- [Need link with API info]------------------- -->
                 <article>
-                    <p>* [Improve Health]</p>
-                    <p>* [Help you relax]</p>
-                    <p>* [Boost you immune system]</p>
-                    <p>* [Reduce pain and soreness]</p>
-                    <p>* [Prevent chronic diseases]</p>
-                    <p>* [Improve your digestive system]</p>
-                    <p>* [Calorie-Free]</p>
-                    <p>* [Lose weight]</p>
-                    <p>* [Quick to make]</p>
+                    <p><i class="fas fa-check"></i> Improve Health</p>
+                    <p><i class="fas fa-check"></i> Help you relax</p>
+                    <p><i class="fas fa-check"></i> Boost you immune system</p>
+                    <p><i class="fas fa-check"></i> Reduce pain and soreness</p>
+                    <p><i class="fas fa-check"></i> Prevent chronic diseases</p>
+                    <p><i class="fas fa-check"></i> Improve your digestive system</p>
+                    <p><i class="fas fa-check"></i> Calorie-Free</p>
+                    <p><i class="fas fa-check"></i> Lose weight</p>
+                    <p><i class="fas fa-check"></i> Quick to make</p>
                 </article>
                 <article>
-                    <p>* [Improve heart health]</p>
-                    <p>* [Help Brain function]</p>
-                    <p>* [Lower blood pressure]</p>
-                    <p>* [Lower risk of cancer]</p>
-                    <p>* [Reduce bad breath]</p>
-                    <p>* [Prevent type 2 diabetes]</p>
-                    <p>* [Prevent cardiovascular disease]</p>
-                    <p>* [Burn fat]</p>
-                    <p>* [Help Anti-aging]</p>
+                    <p><i class="fas fa-check"></i> Improve heart health</p>
+                    <p><i class="fas fa-check"></i> Help Brain function</p>
+                    <p><i class="fas fa-check"></i> Lower blood pressure</p>
+                    <p><i class="fas fa-check"></i> Lower risk of cancer</p>
+                    <p><i class="fas fa-check"></i> Reduce bad breath</p>
+                    <p><i class="fas fa-check"></i> Prevent type 2 diabetes</p>
+                    <p><i class="fas fa-check"></i> Prevent cardiovascular disease</p>
+                    <p><i class="fas fa-check"></i> Burn fat</p>
+                    <p><i class="fas fa-check"></i> Help Anti-aging</p>
                 </article>
             </section>
 
         </article>
         <!-- API list with search engine -->
-        <section>
+        <section id="search">
             <form action="/action_page.php">
                 <input type="text" placeholder="Low blood pressure" name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -120,12 +121,16 @@
             © Made with effort by Mark
         </h4>
     </footer>
-    <script type="text/javascript">
-        window.addEventListener("scroll",function(){
-            let nav = document.querySelector("nav");
-            nav.classList.toggle("hover",window.scrollY > 0);
-        })
-    </script>
 </body>
+<script>
+    function myFunction_ikigai() {
+        let extra = document.getElementById("benefits");
+        if (extra.style.display === "none") {
+            extra.style.display = "flex";
+        } else {
+            extra.style.display = "none";
+        }
+    }
+</script>
 
 </html>

@@ -3,33 +3,41 @@
 let html = '';
 
 window.onload = () => {
-    fetch('https://tea-api-vic-lo.herokuapp.com/tea')
-        .then(response => response.json())
-        .then(data => {
-            console.log('Getting data');
-            console.log(data);
+  // When User scroll down - Background changes
+  window.addEventListener("scroll", function () {
+    let nav = document.querySelector("nav");
+    nav.classList.toggle("hover", window.scrollY > 0);
+  })
 
-            data.forEach(data => {
+  fetch('https://tea-api-vic-lo.herokuapp.com/tea')
+    .then(response => response.json())
+    .then(data => {
+      console.log('Getting data');
+      console.log(data);
 
-                html += `
+      data.forEach(data => {
+        // Once It click it should link to next page by selected items
+        html += `
                 <section class="container">
+                  <a href="info.html">
                     <div class="image_wrapper">
                         <img src="./${data.image}">
                           <div class="flex overlay">
-                            <h2>
-                              ${data.name}
-                            </h2>
-                            <p>
-                              ${data.description}
-                            </p>
+                              <h2>
+                                ${data.name}
+                              </h2>
+                              <p>
+                                ${data.description}
+                              </p>
                           </div>
                     </div>
+                  </a>
                 </section>
                 `;
 
-            })
+      })
 
-            document.getElementById("container").innerHTML = html;
+      document.getElementById("container").innerHTML = html;
 
-        });
+    });
 }
