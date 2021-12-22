@@ -1,7 +1,5 @@
 "use strict";
 
-// ------------------- WIP ------------------- 
-
 let html = '';
 
 window.onload = () => {
@@ -14,17 +12,17 @@ window.onload = () => {
             data.forEach(data => {
 
                 html += `
-                <section>
+                <section class="container">
                     <div class="image_wrapper">
                         <img src="./${data.image}">
-                    </div>
-                    <div class="article_content_wrapper">
-                        <div>
-                            <h2>${data.name}</h2>
-                        </div>
-                        <div class="content">
-                            ${data.description}
-                        </div>
+                          <div class="flex overlay">
+                            <h2>
+                              ${data.name}
+                            </h2>
+                            <p>
+                              ${data.description}
+                            </p>
+                          </div>
                     </div>
                 </section>
                 `;
