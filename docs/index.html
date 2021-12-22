@@ -17,6 +17,17 @@
 
     <script src="main.js"></script>
     <script src="../src/index.js" type="module"></script>
+    <script src="../src/testing.js" type="module"></script>
+    <script>
+        // Nav Bookmarks
+        function openNav() {
+          document.getElementById("navBookmarks").style.height = "100%";
+        }
+    
+        function closeNav() {
+          document.getElementById("navBookmarks").style.height = "0%";
+        }
+      </script>
 </head>
 
 <body>
@@ -28,7 +39,16 @@
         <ul id="right">
             <li><a href="#search">Tea</a></li>
             <li><a href="#a_info">About</a></li>
+            <span onclick="openNav()"><a><i class="fas fa-bookmark"></i></a></span>
         </ul>
+        <section id="navBookmarks" class="navBookmarks">
+            <section>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </section>
+            <div id="bookmarks">
+                <!-- ------------------- [API Selections Fetchen] ------------------- -->
+            </div>
+        </section>
     </nav>
     <header>
         <!-- ------------------- Header ------------------- -->

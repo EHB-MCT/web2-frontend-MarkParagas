@@ -1,14 +1,15 @@
 "use strict";
-
-let html = '';
-
-window.onload = () => {
   // When User scroll down - Background changes
   window.addEventListener("scroll", function () {
     let nav = document.querySelector("nav");
     nav.classList.toggle("hover", window.scrollY > 0);
   })
 
+
+let html = '';
+
+window.onload = () => {
+  // Shows Api on the page
   fetch('https://tea-api-vic-lo.herokuapp.com/tea')
     .then(response => response.json())
     .then(data => {
@@ -41,3 +42,5 @@ window.onload = () => {
 
     });
 }
+
+// Works
