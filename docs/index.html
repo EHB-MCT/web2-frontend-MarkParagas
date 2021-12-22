@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <script src="main.js"></script>
     <script src="../src/index.js" type="module"></script>
@@ -33,12 +33,12 @@
     <header>
         <!-- ------------------- Header ------------------- -->
         <article>
-            <h1>Genki Tea</h1>
+            <h1>Genki <i>Tea</i></h1>
             <section>
                 <button onclick="myFunction_ikigai()">
                     <a href="#benefits">benefits</a>
                 </button>
-                <button>
+                <button class="brown">
                     <a href="#search">search</a>
                 </button>
             </section>
@@ -54,7 +54,7 @@
     <main id="a_info">
         <!-- ------------------- [Info] ------------------- -->
         <article id="info">
-            <h2>Genki Tea - Healthy tea, help you improve your health!</h2>
+            <h2>Genki <i>Tea</i> - Healthy tea, help you improve your health!</h2>
             <article>
                 <p>
                     Whether you are curious about tea health benefits, or you simply want to relax and enjoy a delicious
@@ -103,10 +103,14 @@
         </article>
         <!-- API list with search engine -->
         <section id="search">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Low blood pressure" name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            <section id="form">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Low blood pressure" name="search">
+                    <button class="brown" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+    
+                <h3>Each type of flavors has own benefits of health</h3>
+            </section>
 
             <div id="container">
                 <!-- ------------------- [API Selections Fetchen] ------------------- -->
