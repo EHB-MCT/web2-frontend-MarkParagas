@@ -17,3 +17,6 @@ Clock = https://fontawesome.com/v5.15/icons/clock?style=regular
 Blender = https://fontawesome.com/v5.15/icons/blender?style=solid
 Book = https://fontawesome.com/v5.15/icons/book?style=solid
 Cross = https://fontawesome.com/v5.15/icons/times-circle?style=solid
+Tint = https://fontawesome.com/v5.15/icons/tint?style=solid
+Leaf = https://fontawesome.com/v5.15/icons/leaf?style=solid
+Heartbeat = https://fontawesome.com/v5.15/icons/heartbeat?style=solid
