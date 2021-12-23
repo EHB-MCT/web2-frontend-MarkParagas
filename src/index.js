@@ -1,7 +1,8 @@
+"use strict";
+
 let html = '';
 
 window.onload = () => {
-  document.body.appendChild(component());
 
   // When User scroll down - Background changes
   window.addEventListener("scroll", function () {
@@ -22,7 +23,7 @@ window.onload = () => {
                 <section class="container">
                   <a href="info.html">
                     <div class="image_wrapper">
-                        <img src="../${data.image}">
+                        <img src="./${data.image}">
                           <div class="flex overlay">
                               <h2>
                                 ${data.name}
