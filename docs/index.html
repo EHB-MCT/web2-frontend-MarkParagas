@@ -15,8 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    <script type="module" src="./main.js"></script>
-    <!-- <script src="../src/index.js" type="module"></script> -->
     <script>
         // Nav Bookmarks
         function openNav() {
@@ -51,7 +49,7 @@
                         <i class="fas fa-times-circle"></i>
                     </div>
                     <div>
-                      <a href="info.html">
+                      <a href="./page/info.html">
                          <img src="./uploads/green.png">
                       </a>
                     </div>
@@ -64,7 +62,7 @@
         <article>
             <h1>Genki <i>Tea</i></h1>
             <section>
-                <button onclick="myFunction_ikigai()">
+                <button onclick="benefits()">
                     <a href="#benefits">benefits</a>
                 </button>
                 <button class="brown">
@@ -94,7 +92,7 @@
                     Discover more about tea health benefits and on how to prepare them.
                 </p>
             </article>
-            <button onclick="myFunction_ikigai()">
+            <button onclick="benefits()">
                 <a href="#benefits">benefits</a>
             </button>
         </article>
@@ -156,7 +154,7 @@
     </footer>
 </body>
 <script>
-    function myFunction_ikigai() {
+    function benefits() {
         let extra = document.getElementById("benefits");
         if (extra.style.display === "none") {
             extra.style.display = "flex";

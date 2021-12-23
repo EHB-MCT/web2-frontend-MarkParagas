@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/EHB-MCT/web2-frontend-MarkParagas#readme",
   "dependencies": {
+    "cleave.js": "^1.6.0",
     "lodash": "^4.17.21",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"

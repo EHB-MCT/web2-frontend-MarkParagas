@@ -1,6 +1,7 @@
-"use strict";
+let html = '';
 
-document.body.appendChild(component());
+window.onload = () => {
+  document.body.appendChild(component());
 
   // When User scroll down - Background changes
   window.addEventListener("scroll", function () {
@@ -8,10 +9,6 @@ document.body.appendChild(component());
     nav.classList.toggle("hover", window.scrollY > 0);
   })
 
-
-let html = '';
-
-window.onload = () => {
   // Shows Api on the page
   fetch('https://tea-api-vic-lo.herokuapp.com/tea')
     .then(response => response.json())
@@ -25,7 +22,7 @@ window.onload = () => {
                 <section class="container">
                   <a href="info.html">
                     <div class="image_wrapper">
-                        <img src="./${data.image}">
+                        <img src="../${data.image}">
                           <div class="flex overlay">
                               <h2>
                                 ${data.name}
