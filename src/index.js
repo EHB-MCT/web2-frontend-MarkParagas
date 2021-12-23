@@ -1,4 +1,15 @@
 "use strict";
+
+function component() {
+  const element = document.createElement('div');
+
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+  return element;
+}
+
+document.body.appendChild(component());
+
   // When User scroll down - Background changes
   window.addEventListener("scroll", function () {
     let nav = document.querySelector("nav");
@@ -22,7 +33,7 @@ window.onload = () => {
                 <section class="container">
                   <a href="info.html">
                     <div class="image_wrapper">
-                        <img src="../${data.image}">
+                        <img src="./${data.image}">
                           <div class="flex overlay">
                               <h2>
                                 ${data.name}
