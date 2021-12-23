@@ -62,7 +62,7 @@ h4 {
 
 footer {
   height: 5vh;
-  margin: 1% 0;
+  margin: 2.5% 0;
   align-items: center;
 }
 
@@ -166,22 +166,25 @@ nav .edited .fa-times-circle:before {
 
 main {
   flex-direction: column;
-  margin-top: 8.5vh;
+  margin-top: 12.5vh;
   display: flex;
   justify-content: space-around;
   height: 150vh;
 }
 
-#container_info img {
-  width: 600px;
-}
-
+/* ---------------------- information --------------------- */
 
 #container_info {
-  height: 60vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#title {
+  height: 15vh;
+  display: flex;
+  align-items: center;
 }
 
 #container_info > section h1 {
@@ -191,6 +194,84 @@ main {
   font-size: 5em;
   text-align: center;
   justify-content: center;
+}
+
+#tea_image {
+  align-items: center;
+  justify-content: center;
+}
+
+#container_info img {
+  width: 500px;
+}
+
+#tea_info {
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#tea_info i {
+  padding-right: 10px;
+}
+
+#tea_info h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  justify-content: normal;
+}
+
+#description, #cook, #recept, #ingredient, #water, #time {
+  flex-direction: column;
+}
+
+#description {
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#cook {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#tea_info p {
+  width: 80%;
+  line-height: 25px;
+}
+
+#recept {
+  display: flex;
+  flex-direction: row;
+}
+
+#ingredient, #water, #time {
+  display: flex;
+  height: 7.5vh;
+  justify-content: space-evenly;
+}
+
+#water {
+  width: 80%;
+}
+
+#favorite i {
+  color: #84451E;
+  font-size: 65px;
+}
+
+/* -------------------- Arrow Down -------------------- */
+
+#arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-angle-down:before {
+  content: "\f107";
+  font-size: 100px;
 }
 
 /* -------------------- API containers -------------------- */
