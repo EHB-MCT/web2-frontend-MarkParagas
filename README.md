@@ -21,7 +21,6 @@ Icons: Fontawesome.com
 - Tint = https://fontawesome.com/v5.15/icons/tint?style=solid
 - Leaf = https://fontawesome.com/v5.15/icons/leaf?style=solid
 - Heartbeat = https://fontawesome.com/v5.15/icons/heartbeat?style=solid
-<<<<<<< HEAD
 
 Exercices: (WIP)
 - Pokemon: https://www.youtube.com/watch?v=fJOZtRCdPFc&list=PLGsnrfn8XzXii2J5-Jpqufypu6upxcSGx&index=14
