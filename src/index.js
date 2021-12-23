@@ -22,7 +22,7 @@ window.onload = () => {
                 <section class="container">
                   <a href="info.html">
                     <div class="image_wrapper">
-                        <img src="./${data.image}">
+                        <img src="../${data.image}">
                           <div class="flex overlay">
                               <h2>
                                 ${data.name}
