@@ -160,14 +160,14 @@ nav section > section {
 
 .edited {
   position: absolute;
-  top: 87%;
-  left: 83%;
+  top: 83%;
+  left: 84%;
 }
 
-nav .edited .fa-bookmark:before {
-  content: "\f02e";
-  color: #a3c648;
-  font-size: 40px;
+nav .edited .fa-times-circle:before {
+  content: "\f057";
+  color: #c64848;
+  font-size: 30px;
 }
 
 
