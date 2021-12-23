@@ -25,5 +25,3 @@ Icons: Fontawesome.com
 
 Exercices: (WIP)
 - Pokemon: https://www.youtube.com/watch?v=fJOZtRCdPFc&list=PLGsnrfn8XzXii2J5-Jpqufypu6upxcSGx&index=14
-=======
->>>>>>> bb545ca3443666b40b963511c5a04d2d46e616f5
