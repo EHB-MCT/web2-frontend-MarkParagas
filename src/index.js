@@ -1,13 +1,5 @@
 "use strict";
 
-function component() {
-  const element = document.createElement('div');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
 document.body.appendChild(component());
 
   // When User scroll down - Background changes

@@ -183,11 +183,9 @@ nav .edited .fa-times-circle:before {
   justify-content: space-evenly;
 }
 
-#bookmarks > .testing {
+#bookmarks > .container {
   display: flex;
-  position: relative;
   width: auto;
-  margin-bottom: 2%;
 }
 
 #bookmarks > img {
