@@ -2,15 +2,34 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
-
 /* Working with FLEXBOX */
-body, nav, ul, main, header, article, section, form, section, #container, footer, h1, h2, h3, h4{
+body, nav, ul, main, header, article, section, form, section, #container_recom, footer, h1, h2, h3, h4{
   display: flex;
   width: 100%;
 }
 
+/* ---------------------  Scrollbar ---------------------  */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b3cd81;
+  border-radius: 10px;
+}
+
+
 /* ---------------------- General --------------------- */
 
 body { 
@@ -19,16 +38,22 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  font-size: 10em;
-  justify-content: center;
-  font-family: 'Poppins';
-  font-weight: 700;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  transition: .5s ease;
+  opacity: 0.8;
 }
 
 h2 {
-  font-size: 1.8em;
   justify-content: center;
+}
+
+i {
+  font-family: 'Pacifico', cursive;
 }
 
 h4 {
@@ -44,14 +69,15 @@ footer {
 /* ---------------------- Nav --------------------- */
 
 nav {
-  position: absolute;
+  position: fixed;
   z-index: 99;
-  height: 7vh;
+  height: 8.5vh;
   width: 100%;
   color: white;
   justify-content: space-around;
   font-size: 1.5em;
   font-weight: 700;
+  background-color: #b3cd81;
 }
 
 ul {
@@ -64,7 +90,7 @@ ul {
 }
 
 #right {
-  width: 20%;
+  width: 30%;
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -74,67 +100,181 @@ li {
   text-decoration: none;
 }
 
-/* ---------------------- General --------------------- */
+/* ---------------------- Extra Nav Bookmarks FAV --------------------- */
 
-body { 
-  font-family: sans-serif; /* Poppines */
-  background-color: White;
+nav section > section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1% 0%;
+}
+
+.navBookmarks {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: rgb(0,0,0);
+  overflow-y: hidden;
+  transition: 0.5s;
+  color: white;
+  display: flex;
   flex-direction: column;
-}
-
-h1 {
-  font-size: 10em;
-  justify-content: center;
-  font-family: 'Poppins';
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.8em;
-  justify-content: center;
-}
-
-h4 {
-  justify-content: center;
-}
-
-footer {
-  height: 5vh;
-  margin: 1% 0;
   align-items: center;
 }
 
-/* ---------------------- Nav --------------------- */
-
-nav {
-  height: 7vh;
-  width: 100%;
-  color: white;
-  justify-content: space-around;
-  font-size: 1.5em;
-  font-weight: 700;
+.closebtn {
+  font-size: 60px;
+  display: flex;
+  margin: 1% 3.5% 0%;
 }
 
-ul {
-  flex-direction: row;
+.edited {
+  position: absolute;
+  top: 82%;
+  left: 84%;
+}
+
+nav .edited .fa-times-circle:before {
+  content: "\f057";
+  color: #c64848;
+  font-size: 30px;
+}
+
+/* ---------------------- Testing --------------------- */
+
+#bookmarks {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 80%;
   align-items: center;
-}
-
-#left {
-  margin-left: 5%;
-}
-
-#right {
-  width: 20%;
-  flex-direction: row;
+  align-content: center;
   justify-content: space-evenly;
 }
 
-li {
-  display: block;
-  text-decoration: none;
+#bookmarks > .container {
+  display: flex;
+  width: auto;
+}
+
+#bookmarks > img {
+  width: 200px;
 }
 
 /* ---------------------- Main --------------------- */
 
-main {flex-direction: column;}
+main {
+  flex-direction: column;
+  margin-top: 8.5vh;
+  display: flex;
+  justify-content: space-around;
+  height: 150vh;
+}
+
+#container_info img {
+  width: 600px;
+}
+
+
+#container_info {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#container_info > section h1 {
+  color: #9DC54F;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 5em;
+  text-align: center;
+  justify-content: center;
+}
+
+/* -------------------- API containers -------------------- */
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: space-evenly;
+}
+
+main > section > article {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+main > section > article h2 {
+  color: #9DC54F;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 2.5em;
+  text-align: center;
+  justify-content: center;
+}
+
+#container_recom img {width: 400px;}
+
+#container_recom {
+  flex-direction: row;
+  width: 100%;
+}
+
+#container_recom section {
+  flex-direction: column;
+  width: 25%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.flex h2 {
+  color: white;
+  font-size: 1.8em;
+  text-transform: capitalize;
+}
+
+.flex p {
+ width: 75%;
+ line-height: 1.8;
+}
+
+.image_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------------- Hover -------------------- */
+
+.container {
+  display: flex;
+  position: relative;
+  width: 50%;
+  margin-bottom: 2%;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #22760aa1;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}

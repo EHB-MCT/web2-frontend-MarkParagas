@@ -13,33 +13,158 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    
-    <script src="main.js"></script>
+
+    <script>
+        // Nav Bookmarks
+        function openNav() {
+            document.getElementById("navBookmarks").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("navBookmarks").style.height = "0%";
+        }
+    </script>
 </head>
 
 <body>
     <!-- ------------------- Nav ------------------- -->
     <nav>
         <ul id="left">
-            <li>Genki Tea</li>
+            <li><a href="../index.html">Genki Tea</a></li>
         </ul>
         <ul id="right">
-            <li>Tea</li>
-            <li>About</li>
+            <li><a href="../index.html">Tea</a></li>
+            <li><a href="../index.html">About</a></li>
+            <span onclick="openNav()"><a><i class="fas fa-bookmark"></i></a></span>
         </ul>
-    </nav>
-    <main>
-
-    </main>
-    <div>
-        <section>
-            <div>
-                <img src="../uploads/green.png">
+        <section id="navBookmarks" class="navBookmarks">
+            <section>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </section>
+            <div id="bookmarks">
+                <!-- ------------------- [API Selections Fetchen] | Testing ------------------- -->
+                <section class="container">
+                    <div class="edited">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        <a href="info.html">
+                            <img src="../uploads/camo.png">
+                        </a>
+                    </div>
+                </section>
             </div>
         </section>
-    </div>
+    </nav>
+    <main>
+        <div id="container_info">
+            <section id="title">
+                <h1>Chamomile Tea</h1>
+            </section>
+            <article>
+                <section id="tea_image">
+                    <img src="../uploads/camo.png">
+                </section>
+                <section id="tea_info">
+                    <article id="description">
+                        <h2>Benefits:</h2>
+                        <p>
+                            Chamomile may lower blood pressure slightly.
+                            Taking it with drugs for high blood pressure could cause blood pressure to drop too low.
+                        </p>
+                        <p>
+                            Diabetes medications: Chamomile may lower blood sugar. Taking it with diabetes drugs could
+                            raise the
+                            risk of hypoglycemia or low blood sugar.
+                        </p>
+                    </article>
+                    <article id="cook">
+                        <h2>How to make chamomile tea:</h2>
+                        <p>The flowers are dried and then infused into hot water.</p>
+                    </article>
+                    <article id="ingredient">
+                        <h2>Ingredients</h2>
+                        <p>Flowers (Dried)</p>
+                            
+
+                    </article>
+                </section>
+            </article>
+        </div>
+        <!-- ------------------- Recommendation ------------------- -->
+        <section>
+            <article>
+                <h2>Recommendations</h2>
+            </article>
+            <div id="container_recom">
+                <!-- ------------------- [API Selections Fetchen] ------------------- -->
+                <section class="container">
+                    <a href="info.html">
+                        <div class="image_wrapper">
+                            <img src="../uploads/green.png">
+                            <div class="flex overlay">
+                                <h2>
+                                    Green Tea
+                                </h2>
+                                <p>
+                                    Antioxidants and reduces inflammation.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <section class="container">
+                    <a href="info.html">
+                        <div class="image_wrapper">
+                            <img src="../uploads/green.png">
+                            <div class="flex overlay">
+                                <h2>
+                                    Green Tea
+                                </h2>
+                                <p>
+                                    Antioxidants and reduces inflammation.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <section class="container">
+                    <a href="info.html">
+                        <div class="image_wrapper">
+                            <img src="../uploads/green.png">
+                            <div class="flex overlay">
+                                <h2>
+                                    Green Tea
+                                </h2>
+                                <p>
+                                    Antioxidants and reduces inflammation.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <section class="container">
+                    <a href="info.html">
+                        <div class="image_wrapper">
+                            <img src="../uploads/green.png">
+                            <div class="flex overlay">
+                                <h2>
+                                    Green Tea
+                                </h2>
+                                <p>
+                                    Antioxidants and reduces inflammation.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </section>
+    </main>
     <!-- ------------------- Footer ------------------- -->
     <footer>
         <h4>

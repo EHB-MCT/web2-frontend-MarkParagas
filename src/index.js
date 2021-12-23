@@ -21,12 +21,12 @@ window.onload = () => {
         // Once It click it should link to next page by selected items
         html += `
                 <section class="container">
-                  <a href="info.html">
+                  <a href="./page/info.html">
                     <div class="image_wrapper">
                         <img src="./${data.image}">
                           <div class="flex overlay">
                               <h2>
-                                ${data.name}
+                                ${data.name} Tea
                               </h2>
                               <p>
                                 ${data.description}
@@ -45,12 +45,9 @@ window.onload = () => {
 }
 
 /*
-
 let html = '';
 // Testing
-
 window.onload = () => {
-
   fetch('https://tea-api-vic-lo.herokuapp.com/tea')
     .then(response => response.json())
     .then(data => {
@@ -74,8 +71,6 @@ window.onload = () => {
         })
         
       document.getElementById("bookmarks").innerHTML = html;
-
     });
 }
-
 */
