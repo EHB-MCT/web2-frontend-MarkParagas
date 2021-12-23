@@ -46,6 +46,7 @@
             </section>
             <div id="bookmarks">
                 <!-- ------------------- [API Selections Fetchen] | Testing ------------------- -->
+
                 <section class="container">
                     <div class="edited">
                         <i class="fas fa-times-circle"></i>
@@ -56,6 +57,7 @@
                         </a>
                     </div>
                 </section>
+
             </div>
         </section>
     </nav>
@@ -134,7 +136,8 @@
         <section id="search">
             <section id="form">
                 <form action="/action_page.php">
-                    <input type="text" placeholder="Search doens't work | recom: click button below" name="search"> <!-- placeholder="Low blood pressure" -->
+                    <input type="text" placeholder="Search current not work | recom: click button below" name="search">
+                    <!-- placeholder="Low blood pressure" -->
                     <button class="brown" type="submit"><i class="fa fa-search"></i></button>
                 </form>
 
@@ -154,16 +157,17 @@
             © Made with effort by Mark
         </h4>
     </footer>
-</body>
-<script>
-    function benefits() {
-        let extra = document.getElementById("benefits");
-        if (extra.style.display === "none") {
+    <script>
+          // Hide & Show (by press button)
+        function benefits() {
+            let extra = document.getElementById("benefits");
+            if (extra.style.display === "none") {
             extra.style.display = "flex";
-        } else {
+            } else {
             extra.style.display = "none";
+            }
         }
-    }
-</script>
+    </script>
+</body>
 
 </html>
