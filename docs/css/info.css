@@ -261,6 +261,11 @@ main {
   color: #84451E;
   font-size: 65px;
 }
+#favorite i:hover {
+  color: #0fa02f;
+  transition: .5s ease;
+  opacity: 0.8;
+}
 
 /* -------------------- Arrow Down -------------------- */
 
